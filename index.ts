@@ -33,9 +33,30 @@
 // // zipCode = null //bad
 // console.log(zipCode)
 
-function sum(x: number, y: number): number {
-    return x+y
+// function sum(x: number, y: number): number {
+//     return x+y
+// }
+
+// let total: number = sum(5,6)
+// // console.log(total)
+
+// function debug(message: string) : void {
+//     console.log(message)
+// }
+// debug("hello world")
+
+
+interface person {
+    firstName: string, 
+    age: number,
+    children: string[],
+    hasCertificate?: boolean,
 }
 
-let total: number = sum(5,6)
-console.log(total)
+let todd: person = {
+    firstName: "Todd",
+    age: 23,
+    children: [],
+
+}
+console.log(todd)
